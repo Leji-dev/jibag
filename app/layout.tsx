@@ -14,7 +14,7 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const titre = "Panier Perdu — Récupère les paniers abandonnés de ta boutique";
+const titre = "JIBAG — Récupère les paniers abandonnés de ta boutique";
 const description =
   "Deux e-mails de relance, écrits et envoyés automatiquement pour ta boutique Shopify. 29 € par mois, sans engagement.";
 
