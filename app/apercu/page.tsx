@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import Paiement from "./Paiement";
 
 const COMMANDES = [15, 35, 75, 150];
 const PANIERS = [25, 45, 80, 130];
@@ -124,8 +125,8 @@ export default async function Apercu({
           </p>
         </div>
 
-        <div className="mt-4 rounded-md border-2 border-dashed border-brique p-4 text-sm">
-          Le paiement s’affichera ici à l’étape suivante.
+                <div className="mt-4">
+          <Paiement />
         </div>
         <p className="mt-3 text-sm font-semibold">
           Sans engagement, résiliable à tout moment.
