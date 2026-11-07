@@ -106,7 +106,7 @@ export default async function Apercu({
 
       <section id="paiement" className="mt-6 rounded-md border-2 border-sapin p-5">
         <p className="font-titre text-2xl font-semibold text-sapin">
-          Panier Perdu
+          Panier perdu
         </p>
         <p className="mt-2">
           <span className="font-titre text-5xl font-semibold">29 €</span>{" "}
@@ -124,7 +124,6 @@ export default async function Apercu({
             justifier.
           </p>
         </div>
-
                 <div className="mt-4">
           <Paiement />
         </div>
