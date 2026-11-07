@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const titre = "JIBAG — Récupère les paniers abandonnés de ta boutique";
+const titre = "Panier Perdu — Récupère les paniers abandonnés de ta boutique";
 const description =
   "Deux e-mails de relance, écrits et envoyés automatiquement pour ta boutique Shopify. 29 € par mois, sans engagement.";
 
@@ -43,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${fraunces.variable} ${dmSans.variable}`}>
-      <      <body>
+      <body>
         {children}
         <Pied />
       </body>
