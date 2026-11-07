@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Pied from "./Pied";
 
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body>
         {children}
         <Pied />
+        <Analytics />
       </body>
     </html>
   );

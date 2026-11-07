@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
+import Link from "next/link";
 import { loadStripe } from "@stripe/stripe-js";
 import {
   EmbeddedCheckout,
@@ -39,11 +40,20 @@ export default function Paiement() {
   }
 
   return (
-    <EmbeddedCheckoutProvider
-      stripe={stripePromise}
-      options={{ fetchClientSecret }}
-    >
-      <EmbeddedCheckout />
-    </EmbeddedCheckoutProvider>
+    <>
+      <p className="mb-3 text-xs">
+        En payant, tu acceptes les{" "}
+        <Link href="/cgv" className="underline">
+          conditions générales de vente
+        </Link>
+        .
+      </p>
+      <EmbeddedCheckoutProvider
+        stripe={stripePromise}
+        options={{ fetchClientSecret }}
+      >
+        <EmbeddedCheckout />
+      </EmbeddedCheckoutProvider>
+    </>
   );
 }
