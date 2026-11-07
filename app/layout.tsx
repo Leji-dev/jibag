@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
+import Pied from "./Pied";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -42,7 +43,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${fraunces.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+      <      <body>
+        {children}
+        <Pied />
+      </body>
     </html>
   );
 }
